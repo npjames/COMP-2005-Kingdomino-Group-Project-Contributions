@@ -1,0 +1,7 @@
+//Timer to make sure the AI Movement can be shown to players.
+int delay = 1500;
+Timer timer = new Timer(delay, e -> {
+TileOrient.setDominoSelected(Stack1Domino.get(removeDominoCounter));
+});
+timer.setRepeats(false);
+timer.start();
